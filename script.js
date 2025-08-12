@@ -53,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
             // Get form data
             const formData = new FormData(this);
             const name = formData.get('name');
@@ -62,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Basic validation
             if (!name || !email || !subject || !message) {
-                e.preventDefault();
                 alert('Please fill in all required fields.');
                 return;
             }
@@ -70,19 +71,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
-                e.preventDefault();
                 alert('Please enter a valid email address.');
                 return;
             }
             
-            // Show loading state
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            submitBtn.disabled = true;
-            
-            // Form will submit to Formspree and redirect to success page
-            // The form action is set in the HTML
+            // Simulate form submission
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
         });
     }
 
@@ -243,98 +238,6 @@ document.addEventListener('DOMContentLoaded', function() {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-
-    // Previous Events Collapsible Section
-    const previousEventsToggle = document.getElementById('previousEventsToggle');
-    const previousEventsContent = document.getElementById('previousEventsContent');
-    
-    if (previousEventsToggle && previousEventsContent) {
-        previousEventsToggle.addEventListener('click', function() {
-            const isExpanded = previousEventsContent.classList.contains('expanded');
-            
-            if (isExpanded) {
-                // Collapse the section
-                previousEventsContent.classList.remove('expanded');
-                this.classList.remove('expanded');
-                this.querySelector('span').textContent = 'Show Previous Events';
-            } else {
-                // Expand the section
-                previousEventsContent.classList.add('expanded');
-                this.classList.add('expanded');
-                this.querySelector('span').textContent = 'Hide Previous Events';
-            }
-        });
-    }
-
-    // Past Executives Collapsible Section
-    const pastExecutivesToggle = document.getElementById('pastExecutivesToggle');
-    const pastExecutivesContent = document.getElementById('pastExecutivesContent');
-    
-    if (pastExecutivesToggle && pastExecutivesContent) {
-        pastExecutivesToggle.addEventListener('click', function() {
-            const isExpanded = pastExecutivesContent.classList.contains('expanded');
-            
-            if (isExpanded) {
-                // Collapse the section
-                pastExecutivesContent.classList.remove('expanded');
-                this.classList.remove('expanded');
-                this.querySelector('span').textContent = 'Show Past Executives';
-            } else {
-                // Expand the section
-                pastExecutivesContent.classList.add('expanded');
-                this.classList.add('expanded');
-                this.querySelector('span').textContent = 'Hide Past Executives';
-            }
-        });
-    }
-
-    // Community Popup Functionality
-    const joinCommunityBtn = document.getElementById('joinCommunityBtn');
-    const communityPopup = document.getElementById('communityPopup');
-    const closeCommunityPopup = document.getElementById('closeCommunityPopup');
-    const closeCommunityPopupBtn = document.getElementById('closeCommunityPopupBtn');
-
-    // Open popup when Join Our Community button is clicked
-    if (joinCommunityBtn && communityPopup) {
-        joinCommunityBtn.addEventListener('click', function() {
-            communityPopup.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
-        });
-    }
-
-    // Close popup when X button is clicked
-    if (closeCommunityPopup && communityPopup) {
-        closeCommunityPopup.addEventListener('click', function() {
-            communityPopup.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scrolling
-        });
-    }
-
-    // Close popup when Got it! button is clicked
-    if (closeCommunityPopupBtn && communityPopup) {
-        closeCommunityPopupBtn.addEventListener('click', function() {
-            communityPopup.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scrolling
-        });
-    }
-
-    // Close popup when clicking outside the popup content
-    if (communityPopup) {
-        communityPopup.addEventListener('click', function(e) {
-            if (e.target === communityPopup) {
-                communityPopup.classList.remove('active');
-                document.body.style.overflow = ''; // Restore scrolling
-            }
-        });
-    }
-
-    // Close popup with Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && communityPopup && communityPopup.classList.contains('active')) {
-            communityPopup.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scrolling
-        }
-    });
 
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
