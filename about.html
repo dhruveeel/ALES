@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ALES GSA</title>
+    <meta name="description" content="Learn about the Agricultural, Life & Environmental Sciences Graduate Students' Association at the University of Alberta">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+      /* Tooltip for detailed hover content */
+      .tooltip { position: relative; cursor: help; display: block; padding: 0.5rem 0.75rem; border-radius: 8px; transition: all 0.3s ease; }
+      /* Hover highlight similar to call-to-action buttons */
+      .tooltip:hover { background-color: var(--primary-gold); color: var(--dark-gray); box-shadow: 0 4px 12px rgba(255, 219, 5, 0.3); transform: translateY(-2px); }
+      .tooltip:hover i { color: var(--dark-gray); }
+      .tooltip:hover::after {
+        content: attr(data-tooltip);
+        display: block;         /* inline in flow so it pushes content below */
+        position: static;       /* not absolutely positioned */
+        background: #111827;
+        color: #fff;
+        padding: 12px 14px;
+        border-radius: 8px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+        font-size: 0.95rem;
+        line-height: 1.4;
+        white-space: pre-line;
+        margin-top: 8px;
+      }
+      .tooltip:hover::before { content: none; }
+      /* Stack mission/vision above the What We Do list */
+      .about .about-content { display: grid; grid-template-columns: 1fr; }
+      .about .about-text.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+      .about .about-highlights { margin-top: 1.5rem; }
+      @media (max-width: 768px) {
+        .about .about-text.duo { grid-template-columns: 1fr; }
+      }
+      /* Force 4 departments per row on desktop, remain responsive */
+      .departments .departments-grid { grid-template-columns: repeat(4, 1fr); }
+      @media (max-width: 1024px) {
+        .departments .departments-grid { grid-template-columns: repeat(2, 1fr); }
+      }
+      @media (max-width: 600px) {
+        .departments .departments-grid { grid-template-columns: 1fr; }
+      }
+      /* Values: 3 per row on desktop */
+      .values-section .values-grid { grid-template-columns: repeat(3, 1fr); }
+      @media (max-width: 1024px) {
+        .values-section .values-grid { grid-template-columns: repeat(2, 1fr); }
+      }
+      @media (max-width: 600px) {
+        .values-section .values-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon" style="width:40px;height:40px;padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                        <img src="ALES logo.png" alt="ALES GSA Logo" style="width:100%;height:100%;object-fit:contain;display:block;">
+                    </div>
+                    <div class="logo-text">
+                        <h1>ALES GSA</h1>
+                        <p>University of Alberta</p>
+                    </div>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="events.html">Events & Updates</a>
+                    <a href="team.html">Team & Prev Execs</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="events.html">Events & Updates</a>
+                <a href="team.html">Team & Prev Execs</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>About ALES GSA</h1>
+                <p>Empowering graduate students in Agricultural, Life & Environmental Sciences since 2009</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>About Us</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text duo">
+                    <div class="mission-block">
+                        <h3>Our Mission</h3>
+                        <p>To empower ALES graduate students by fostering leadership, professional development, service opportunities, and a vibrant academic community.</p>
+                    </div>
+                    <div class="vision-block">
+                        <h3>Our Vision</h3>
+                        <p>A future where every ALES graduate student is an empowered leader, driving positive change in agriculture, life, and environmental sciences.</p>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <h4>What We Do</h4>
+                    <ul>
+                        <li class="tooltip" data-tooltip="• Champion Member Interests: Proactively represent the needs, concerns, and perspectives of ALES graduate students to the Faculty of ALES, university administration, the Graduate Students' Association (GSA), and relevant external bodies.
+• Ensure Diverse Representation: Select, support, and empower graduate student representatives to serve effectively on Faculty of ALES committees and university-wide bodies.
+• Promote Equity, Diversity & Inclusion (EDI): Integrate EDI principles into all GSA activities and actively advocate for equitable policies, accessible resources, and an inclusive culture within the Faculty of ALES.
+• Foster Strategic Partnerships: Maintain effective liaison and collaboration with the central Graduate Students' Association (GSA) and other relevant student organizations to amplify student voice and address shared concerns."><i class="fas fa-circle"></i>I. Representation &amp; Advocacy:</li>
+                        <li class="tooltip" data-tooltip="• Facilitate Peer Support &amp; Well-being: Cultivate a supportive community by facilitating peer mentorship networks, well-being initiatives, and accessible resources for academic and personal challenges.
+• Build Community &amp; Fellowship: Organize regular social, recreational, and networking events to foster connection, camaraderie, and a sense of belonging among ALES graduate students.
+• Provide a Forum for Dialogue: Create accessible platforms (e.g., forums, town halls, online spaces) for members to discuss issues, share ideas, and collaboratively address matters affecting their academic and professional lives."><i class="fas fa-circle"></i>II. Member Support &amp; Community Building:</li>
+                        <li class="tooltip" data-tooltip="• Deliver Impactful Programming: Develop, organize, and promote high-quality workshops, seminars, and events focused on professional development, academic success, research skills, and career readiness tailored to ALES disciplines.\n• Disseminate Essential Information: Ensure timely, transparent, and effective communication of relevant academic, professional development, funding, and university policy information to all members."><i class="fas fa-circle"></i>III. Professional &amp; Academic Development:</li>
+                        <li class="tooltip" data-tooltip="• Amplify Member Priorities: Identify, articulate, and prioritize key member concerns and interests to guide the GSA's advocacy efforts and program development."><i class="fas fa-circle"></i>IV. Organizational Focus:</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our History</h2>
+                <p>Fifteen years of supporting graduate students and building community</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">2015</div>
+                    <div class="timeline-content">
+                        <h3>Founded by Grads, For Grads – Since 2015</h3>
+                        <p>ALES GSA was established to represent graduate students in the Faculty of Agricultural, Life & Environmental Sciences.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">2015</div>
+                    <div class="timeline-content">
+                        <h3>Wellness Program</h3>
+                        <p>Introduced comprehensive mental health and wellness support programs.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">2017</div>
+                    <div class="timeline-content">
+                        <h3>First ALES Syposium</h3>
+                        <p>The first ALES Symposium was launched.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">2018</div>
+                    <div class="timeline-content">
+                        <h3>Professional Development</h3>
+                        <p>Expanded career services and professional development opportunities.</p>
+                    </div>
+                </div>
+                
+                
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">2024</div>
+                    <div class="timeline-content">
+                        <h3>First ALES Conference</h3>
+                        <p>Organized first ALES Conference</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="departments">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Departments</h2>
+                <p>Representing graduate students across all ALES departments</p>
+            </div>
+            
+            <div class="departments-grid">
+                <a href="https://www.ualberta.ca/en/resource-economics-environmental-sociology/index.html" target="_blank" class="department-card">
+                    <div class="department-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Resource Economics & Environmental Sociology (REES)</h3>
+                    <p>Exploring the social and economic dimensions of agriculture, resources, and the environment.</p>
+                    <span class="member-count">85+ members</span>
+                </a>
+                
+                <a href="https://www.ualberta.ca/en/human-ecology/index.html" target="_blank" class="department-card">
+                    <div class="department-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Human Ecology (HECOL)</h3>
+                    <p>Advancing research and practice in textiles, apparel, and the well-being of individuals and families.</p>
+                    <span class="member-count">100+ members</span>
+                </a>
+                
+                <a href="https://www.ualberta.ca/en/agricultural-food-nutritional-science/index.html" target="_blank" class="department-card">
+                    <div class="department-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Agricultural, Food & Nutritional Science (AFNS)</h3>
+                    <p>Researching food systems, nutrition, and innovation to support healthy people and a sustainable planet.</p>
+                    <span class="member-count">120+ members</span>
+                </a>
+                
+                <a href="https://www.ualberta.ca/en/renewable-resources/index.html" target="_blank" class="department-card">
+                    <div class="department-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Renewable Resources (ReNR)</h3>
+                    <p>Focusing on forest ecology, conservation, land reclamation, and sustainable resource management.</p>
+                    <span class="member-count">95+ members</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Values</h2>
+                <p>The principles that guide everything we do</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4>Sustainability</h4>
+                    <p>Promoting environmental stewardship and sustainable practices in all our initiatives.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Community</h4>
+                    <p>Building strong connections among graduate students across diverse disciplines.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>Excellence</h4>
+                    <p>Supporting academic and professional development for outstanding achievements.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Innovation</h4>
+                    <p>Fostering creative solutions to global agricultural and environmental challenges.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Inclusivity</h4>
+                    <p>Creating a welcoming environment for students from all backgrounds and experiences.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>Collaboration</h4>
+                    <p>Working together with faculty, staff, and external partners to achieve common goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Achievements</h2>
+                <p>Recognition and accomplishments that demonstrate our impact</p>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>500+ Active Members</h3>
+                    <p>Representing the largest graduate student association in the Faculty of ALES.</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Annual Events</h3>
+                    <p>Hosting workshops, seminars, and social events throughout the academic year.</p>
+                    <span class="achievement-year">2023</span>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>10 Years of Service</h3>
+                    <p>Consistently supporting graduate students since our establishment in 2015.</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Members Say</h2>
+                <p>Hear from graduate students about their experience with ALES GSA</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"ALES GSA has been instrumental in my graduate journey. The networking opportunities and professional development workshops have helped me grow both academically and personally."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Maria Rodriguez">
+                        <div class="author-info">
+                            <h4>Maria Rodriguez</h4>
+                            <span>PhD Candidate, Plant Science</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The mental health support and wellness programs provided by ALES GSA have been a lifeline during my studies. They truly care about student well-being."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/3783725/pexels-photo-3783725.jpeg?auto=compress&cs=tinysrgb&w=150" alt="James Chen">
+                        <div class="author-info">
+                            <h4>James Chen</h4>
+                            <span>MSc Student, Renewable Resources</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Being part of the ALES GSA executive team has given me valuable leadership experience and helped me build a strong professional network."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Sarah Thompson">
+                        <div class="author-info">
+                            <h4>Sarah Thompson</h4>
+                            <span>PhD Candidate, Food Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon" style="width:40px;height:40px;padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                            <img src="ALES logo.png" alt="ALES GSA Logo" style="width:100%;height:100%;object-fit:contain;display:block;">
+                        </div>
+                        <div class="logo-text">
+                            <h3>ALES GSA</h3>
+                            <p>University of Alberta</p>
+                        </div>
+                    </div>
+                    <p>Supporting graduate students in Agricultural, Life & Environmental Sciences 
+                    through advocacy, community building, and professional development.</p>
+                    <div class="social-links">
+                        <a href="mailto:alesgsa@ualberta.ca" title="Email Us"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/ales_gsa/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="events.html">Events & Updates</a></li>
+                        <li><a href="team.html">Team & Prev Execs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="services.html#academic">Academic Support</a></li>
+                        <li><a href="services.html#professional">Career Services</a></li>
+                        <li><a href="services.html#wellness">Mental Health Resources</a></li>
+                        <li><a href="services.html#research">Research Opportunities</a></li>
+                        <li><a href="#">Graduate Handbook</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>Email</p>
+                            <span>alesgsa@ualberta.ca</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p>Room</p>
+                            <span>GSB 808</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="territorial-acknowledgement"><strong>Territorial Acknowledgement</strong><br>The University of Alberta, its buildings, labs and research stations are primarily located on the territory of the Néhiyaw (Cree), Niitsitapi (Blackfoot), Métis, Nakoda (Stoney), Dene, Haudenosaunee (Iroquois) and Anishinaabe (Ojibway/Saulteaux), lands that are now known as part of Treaties 6, 7 and 8 and homeland of the Métis. The University of Alberta respects the sovereignty, lands, histories, languages, knowledge systems and cultures of all First Nations, Métis and Inuit nations.</p>
+                <p>&copy; 2024 ALES Graduate Students' Association. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

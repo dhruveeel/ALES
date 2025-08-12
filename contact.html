@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ALES GSA</title>
+    <meta name="description" content="Get in touch with ALES GSA - we're here to help with any questions or support you need">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon" style="width:40px;height:40px;padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                        <img src="ALES logo.png" alt="ALES GSA Logo" style="width:100%;height:100%;object-fit:contain;display:block;">
+                    </div>
+                    <div class="logo-text">
+                        <h1>ALES GSA</h1>
+                        <p>University of Alberta</p>
+                    </div>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="events.html">Events & Updates</a>
+                    <a href="team.html">Team & Prev Execs</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="events.html">Events & Updates</a>
+                <a href="team.html">Team & Prev Execs</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions or need support? We're here to help. Reach out to us through any of the channels below.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p class="contact-value">alesgsa@ualberta.ca</p>
+                                <p class="contact-desc">Send us an email for general inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call Us</h4>
+                                <p class="contact-value">(780) 492-3111</p>
+                                <p class="contact-desc">Available during business hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Visit Us</h4>
+                                <p class="contact-value">GSB 808</p>
+                                <p class="contact-desc">University of Alberta</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p class="contact-value">Monday–Friday — By appointment only</p>
+                                <p class="contact-desc">Please contact us to schedule a meeting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="new-graduate">New Graduate Enquiry</option>
+                                <option value="events">Event Information</option>
+                                <option value="academic">Academic Support</option>
+                                <option value="professional">Professional Development</option>
+                                <option value="general">General Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required rows="6" placeholder="Enter your message here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon" style="width:40px;height:40px;padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                            <img src="ALES logo.png" alt="ALES GSA Logo" style="width:100%;height:100%;object-fit:contain;display:block;">
+                        </div>
+                        <div class="logo-text">
+                            <h3>ALES GSA</h3>
+                            <p>University of Alberta</p>
+                        </div>
+                    </div>
+                    <p>Supporting graduate students in Agricultural, Life & Environmental Sciences 
+                    through advocacy, community building, and professional development.</p>
+                    <div class="social-links">
+                        <a href="mailto:alesgsa@ualberta.ca" title="Email Us"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/ales_gsa/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="events.html">Events & Updates</a></li>
+                        <li><a href="team.html">Team & Prev Execs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="services.html#academic">Academic Support</a></li>
+                        <li><a href="services.html#professional">Career Services</a></li>
+                        <li><a href="services.html#wellness">Mental Health Resources</a></li>
+                        <li><a href="services.html#research">Research Opportunities</a></li>
+                        <li><a href="#">Graduate Handbook</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>Email</p>
+                            <span>alesgsa@ualberta.ca</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p>Room</p>
+                            <span>GSB 808</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="territorial-acknowledgement"><strong>Territorial Acknowledgement</strong><br>The University of Alberta, its buildings, labs and research stations are primarily located on the territory of the Néhiyaw (Cree), Niitsitapi (Blackfoot), Métis, Nakoda (Stoney), Dene, Haudenosaunee (Iroquois) and Anishinaabe (Ojibway/Saulteaux), lands that are now known as part of Treaties 6, 7 and 8 and homeland of the Métis. The University of Alberta respects the sovereignty, lands, histories, languages, knowledge systems and cultures of all First Nations, Métis and Inuit nations.</p>
+                <p>&copy; 2024 ALES Graduate Students' Association. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
