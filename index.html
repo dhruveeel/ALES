@@ -14,8 +14,8 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                    <div class="logo-icon" style="width:40px;height:40px;padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                        <img src="ALES logo.png" alt="ALES GSA Logo" style="width:100%;height:100%;object-fit:contain;display:block;">
                     </div>
                     <div class="logo-text">
                         <h1>ALES GSA</h1>
@@ -61,7 +61,7 @@
                 </p>
                 
                 <div class="hero-buttons">
-                    <a href="contact.html" class="btn btn-primary">Join Our Community</a>
+                    <button class="btn btn-primary" id="joinCommunityBtn">Join Our Community</button>
                     <a href="about.html" class="btn btn-secondary">Learn More</a>
                 </div>
                 
@@ -78,10 +78,22 @@
                     </div>
                     <div class="stat-card">
                         <i class="fas fa-target"></i>
-                        <div class="stat-number">15+</div>
+                        <div class="stat-number">10+</div>
                         <div class="stat-label">Years of Excellence</div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty of ALES Button Section -->
+    <section class="faculty-button-section">
+        <div class="container">
+            <div class="faculty-button-wrapper">
+                <a href="https://www.ualberta.ca/en/agriculture-life-environment-sciences/index.html" target="_blank" class="btn btn-faculty">
+                    <i class="fas fa-university"></i>
+                    Faculty of ALES
+                </a>
             </div>
         </div>
     </section>
@@ -143,41 +155,7 @@
             </div>
             
             <div class="featured-news-grid">
-                <article class="featured-news-card">
-                    <div class="news-image">
-                        <img src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Awards">
-                        <span class="news-category awards">Awards</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>ALES GSA Wins Outstanding Graduate Association Award</h3>
-                        <p>We are proud to announce that ALES GSA has been recognized for excellence in graduate student advocacy and community building.</p>
-                        <div class="news-meta">
-                            <span class="news-date">March 10, 2024</span>
-                            <span class="news-read-time">3 min read</span>
-                        </div>
-                        <a href="events.html" class="read-more">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
-                
-                <article class="featured-news-card">
-                    <div class="news-image">
-                        <img src="https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Wellness">
-                        <span class="news-category wellness">Wellness</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>New Mental Health Support Program Launched</h3>
-                        <p>ALES GSA introduces comprehensive mental health and wellness support services for graduate students.</p>
-                        <div class="news-meta">
-                            <span class="news-date">March 8, 2024</span>
-                            <span class="news-read-time">4 min read</span>
-                        </div>
-                        <a href="events.html" class="read-more">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
+                <!-- News articles will be added here in the future -->
             </div>
             
             <div class="view-all-news">
@@ -197,17 +175,17 @@
             <div class="events-preview-grid">
                 <div class="event-preview-card">
                     <div class="event-preview-header">
-                        <span class="event-type academic">Academic</span>
+                        <span class="event-type social">Social</span>
                         <div class="event-date">
-                            <span class="day">15</span>
-                            <span class="month">MAR</span>
+                            <span class="day">22</span>
+                            <span class="month">AUG</span>
                         </div>
                     </div>
-                    <h3>Graduate Student Research Symposium</h3>
-                    <p>Annual symposium showcasing graduate student research across all ALES departments.</p>
+                    <h3>BBQ - Food, Fun & Community!</h3>
+                    <p>Join us for an afternoon of delicious food, refreshing drinks, lawn games, and networking at Queen Elizabeth Park.</p>
                     <div class="event-preview-details">
-                        <span><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</span>
-                        <span><i class="fas fa-map-marker-alt"></i> Agriculture Forestry Centre</span>
+                        <span><i class="fas fa-clock"></i> 12:00 PM - 4:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Queen Elizabeth Park</span>
                     </div>
                     <a href="events.html" class="btn btn-primary">Learn More</a>
                 </div>
@@ -220,11 +198,28 @@
                             <span class="month">MAR</span>
                         </div>
                     </div>
-                    <h3>ALES GSA Social Mixer</h3>
+                    <h3>ALES 2024 Onboarding Event</h3>
                     <p>Monthly social gathering for networking and community building.</p>
                     <div class="event-preview-details">
                         <span><i class="fas fa-clock"></i> 6:00 PM - 9:00 PM</span>
                         <span><i class="fas fa-map-marker-alt"></i> Graduate Student Centre</span>
+                    </div>
+                    <a href="events.html" class="btn btn-primary">Learn More</a>
+                </div>
+                
+                <div class="event-preview-card">
+                    <div class="event-preview-header">
+                        <span class="event-type professional">Professional</span>
+                        <div class="event-date">
+                            <span class="day">SEP</span>
+                            <span class="month">2025</span>
+                        </div>
+                    </div>
+                    <h3>ALES GSA-GROW</h3>
+                    <p>This program is designed to connect graduate students through shared experiences, support, and a stronger sense of community.</p>
+                    <div class="event-preview-details">
+                        <span><i class="fas fa-clock"></i> TBD</span>
+                        <span><i class="fas fa-map-marker-alt"></i> TBD</span>
                     </div>
                     <a href="events.html" class="btn btn-primary">Learn More</a>
                 </div>
@@ -256,8 +251,8 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
-                        <div class="logo-icon">
-                            <i class="fas fa-graduation-cap"></i>
+                        <div class="logo-icon" style="width:40px;height:40px;padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                            <img src="ALES logo.png" alt="ALES GSA Logo" style="width:100%;height:100%;object-fit:contain;display:block;">
                         </div>
                         <div class="logo-text">
                             <h3>ALES GSA</h3>
@@ -267,10 +262,8 @@
                     <p>Supporting graduate students in Agricultural, Life & Environmental Sciences 
                     through advocacy, community building, and professional development.</p>
                     <div class="social-links">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:alesgsa@ualberta.ca" title="Email Us"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/ales_gsa/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 
@@ -302,14 +295,14 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <p>Email</p>
-                            <span>info@alesgsa.ualberta.ca</span>
+                            <span>alesgsa@ualberta.ca</span>
                         </div>
                     </div>
                     <div class="footer-contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <p>Phone</p>
-                            <span>(780) 492-3111</span>
+                            <p>Room</p>
+                            <span>GSB 808</span>
                         </div>
                     </div>
                 </div>
@@ -326,6 +319,25 @@
             </div>
         </div>
     </footer>
+
+    <!-- Community Popup -->
+    <div id="communityPopup" class="community-popup">
+        <div class="community-popup-content">
+            <div class="community-popup-header">
+                <h2>Welcome to Our Community!</h2>
+                <button class="community-popup-close" id="closeCommunityPopup">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="community-popup-body">
+                <p>If you are an ALES graduate, congratulations — you are already a valued member of our community!</p>
+                <p>Feel free to explore and connect with fellow graduates.</p>
+            </div>
+            <div class="community-popup-footer">
+                <button class="btn btn-primary" id="closeCommunityPopupBtn">Got it!</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

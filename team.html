@@ -7,6 +7,12 @@
     <meta name="description" content="Meet the executive team of ALES GSA - dedicated graduate students working to represent and support our community">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+      /* Ensure contact icons align horizontally across cards */
+      .team-grid .team-card { display: flex; flex-direction: column; height: 100%; }
+      .team-grid .team-info { display: flex; flex-direction: column; flex: 1; }
+      .team-grid .team-contact { margin-top: auto; }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -14,8 +20,8 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                    <div class="logo-icon" style="width:40px;height:40px;padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                        <img src="ALES logo.png" alt="ALES GSA Logo" style="width:100%;height:100%;object-fit:contain;display:block;">
                     </div>
                     <div class="logo-text">
                         <h1>ALES GSA</h1>
@@ -56,18 +62,19 @@
                 <p>Dedicated graduate students working to represent and support our community</p>
             </div>
             
-            <div class="team-grid">
+            <div class="team-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;">
+                <!-- Elsie -->
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sarah Chen">
+                        <img src="Elsie.jpg" alt="Elsie Rebecca Osei">
                         <div class="team-position">President</div>
                     </div>
                     <div class="team-info">
-                        <h3>Sarah Chen</h3>
-                        <p class="team-department">Agricultural & Resource Economics</p>
-                        <p class="team-bio">PhD candidate researching sustainable agricultural policy and rural development.</p>
+                        <h3>Elsie Rebecca Osei</h3>
+                        <p class="team-department">HECOL</p>
+                        <p class="team-bio">PhD candidate researching on intersections of material culture, fashion, and societal dynamics</p>
                         <div class="team-contact">
-                            <a href="mailto:president@alesgsa.ca" class="contact-btn">
+                            <a href="mailto:erosei@ualberta.ca" class="contact-btn">
                                 <i class="fas fa-envelope"></i>
                             </a>
                             <a href="#" class="contact-btn">
@@ -76,18 +83,19 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Prithviraj -->
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Michael Rodriguez">
-                        <div class="team-position">Vice President</div>
+                        <img src="Prithviraj.jpg" alt="Prithviraj V">
+                        <div class="team-position">VP Communication</div>
                     </div>
                     <div class="team-info">
-                        <h3>Michael Rodriguez</h3>
-                        <p class="team-department">Plant Science</p>
-                        <p class="team-bio">MSc student focusing on crop genetics and plant breeding technologies.</p>
+                        <h3>Prithviraj V</h3>
+                        <p class="team-department">AFNS</p>
+                        <p class="team-bio">PhD Student researching on cold plasma and nanobubbles</p>
                         <div class="team-contact">
-                            <a href="mailto:vicepresident@alesgsa.ca" class="contact-btn">
+                            <a href="mailto:prithvi1@ualberta.ca" class="contact-btn">
                                 <i class="fas fa-envelope"></i>
                             </a>
                             <a href="#" class="contact-btn">
@@ -96,18 +104,19 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Priscillar -->
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="https://images.pexels.com/photos/3783725/pexels-photo-3783725.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Emma Thompson">
-                        <div class="team-position">Secretary</div>
+                        <img src="Priscillar.jpg" alt="Priscillar Wenyika">
+                        <div class="team-position">VP Student life</div>
                     </div>
                     <div class="team-info">
-                        <h3>Emma Thompson</h3>
-                        <p class="team-department">Renewable Resources</p>
-                        <p class="team-bio">PhD candidate in forest ecology and environmental conservation.</p>
+                        <h3>Priscillar Wenyika</h3>
+                        <p class="team-department">ReNR</p>
+                        <p class="team-bio">PhD candidate researching on the soil health benefits of liming in the Canadian prairies</p>
                         <div class="team-contact">
-                            <a href="mailto:secretary@alesgsa.ca" class="contact-btn">
+                            <a href="mailto:pricillar.wenyika@ualberta.ca" class="contact-btn">
                                 <i class="fas fa-envelope"></i>
                             </a>
                             <a href="#" class="contact-btn">
@@ -116,18 +125,19 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Dayani -->
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400" alt="David Kim">
-                        <div class="team-position">Treasurer</div>
+                        <img src="Dayani.jpg" alt="Dayani Patuwatha Withanage">
+                        <div class="team-position">VP Finance</div>
                     </div>
                     <div class="team-info">
-                        <h3>David Kim</h3>
-                        <p class="team-department">Food & Bioproduct Sciences</p>
-                        <p class="team-bio">MSc student specializing in food safety and nutrition science.</p>
+                        <h3>Dayani Patuwatha Withanage</h3>
+                        <p class="team-department">AFNS</p>
+                        <p class="team-bio">PhD Student researching on wheat–canola rotation systems.</p>
                         <div class="team-contact">
-                            <a href="mailto:treasurer@alesgsa.ca" class="contact-btn">
+                            <a href="mailto:patuwath@ualberta.ca" class="contact-btn">
                                 <i class="fas fa-envelope"></i>
                             </a>
                             <a href="#" class="contact-btn">
@@ -136,18 +146,19 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Zoe -->
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Priya Patel">
-                        <div class="team-position">Events Coordinator</div>
+                        <img src="Zoe.jpg" alt="Zoe Wagner">
+                        <div class="team-position">HECOL Representative</div>
                     </div>
                     <div class="team-info">
-                        <h3>Priya Patel</h3>
-                        <p class="team-department">Animal Science</p>
-                        <p class="team-bio">PhD candidate in animal nutrition and welfare research.</p>
+                        <h3>Zoe Wagner</h3>
+                        <p class="team-department">HECOL</p>
+                        <p class="team-bio">Master's student working on collecting strategies for African textiles in museums and the study of Burkinabè textiles in the U of A’s Anne Lambert Clothing and Textiles Collection</p>
                         <div class="team-contact">
-                            <a href="mailto:events@alesgsa.ca" class="contact-btn">
+                            <a href="mailto:zwagner@ualberta.ca" class="contact-btn">
                                 <i class="fas fa-envelope"></i>
                             </a>
                             <a href="#" class="contact-btn">
@@ -156,18 +167,61 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Julian -->
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400" alt="James Wilson">
-                        <div class="team-position">Communications Director</div>
+                        <img src="Julian.jpg" alt="Julian Andres Luchsinger">
+                        <div class="team-position">REES Representative</div>
                     </div>
                     <div class="team-info">
-                        <h3>James Wilson</h3>
-                        <p class="team-department">Agricultural Engineering</p>
-                        <p class="team-bio">MSc student developing precision agriculture technologies.</p>
+                        <h3>Julian Andres Luchsinger</h3>
+                        <p class="team-department">REES</p>
+                        <p class="team-bio">Master's student in Rural Sociology at the Department of Resource Economics and Environmental Sociology</p>
                         <div class="team-contact">
-                            <a href="mailto:communications@alesgsa.ca" class="contact-btn">
+                            <a href="mailto:luchsing@ualberta.ca" class="contact-btn">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="contact-btn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lisa -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="Lisaa.jpg" alt="Lisa Naa Okai">
+                        <div class="team-position">ReNR Representative</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Lisa Naa Okai</h3>
+                        <p class="team-department">ReNR</p>
+                        <p class="team-bio">Master's student researching on the effects of pre-commercial thinning on tree resilience in lodgepole pine</p>
+                        <div class="team-contact">
+                            <a href="mailto:lisanaa@ualberta.ca" class="contact-btn">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="contact-btn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anubhav -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="Anubhav.jpg" alt="Anubhav Tripathi">
+                        <div class="team-position">AFNS Representative</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Anubhav Tripathi</h3>
+                        <p class="team-department">AFNS</p>
+                        <p class="team-bio">Currently researching on a canola genetics and molecular breeding project</p>
+                        <div class="team-contact">
+                            <a href="mailto:tripath4@ualberta.ca" class="contact-btn">
                                 <i class="fas fa-envelope"></i>
                             </a>
                             <a href="#" class="contact-btn">
@@ -177,13 +231,412 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Past Executives Section -->
+            <section class="past-executives">
+                <div class="container">
+                    <div class="section-header collapsible-header" id="pastExecutivesHeader">
+                        <h2>Past Executives</h2>
+                        <p>Honoring the dedicated leaders who have served ALES GSA in previous years</p>
+                        <button class="collapse-toggle" id="pastExecutivesToggle">
+                            <i class="fas fa-chevron-down"></i>
+                            <span>Show Past Executives</span>
+                        </button>
+                    </div>
+                    
+                    <div class="past-executives-content" id="pastExecutivesContent">
+                        <div class="past-executives-grid">
+                            <!-- 2024-2025 -->
+                            <div class="past-executive-card">
+                                <div class="past-executive-image">
+                                    <img src="2024-2025.jpg" alt="Past Executive 2024-2025">
+                                    <div class="past-executive-overlay">
+                                        <span class="past-executive-year">2024-2025</span>
+                                    </div>
+                                </div>
+                                <div class="past-executive-content">
+                                    <h3>2024-2025 Executive Team</h3>
+                                    <div class="past-executive-team">
+                                        <div class="executive-member">
+                                            <strong>President:</strong> Chathuranga De Silva - <a href="mailto:batapola@ualberta.ca">batapola@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Student Life:</strong> Tharangani Somarathna - <a href="mailto:somarath@ualberta.ca">somarath@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Finance:</strong> Oshadhi Pavithra - <a href="mailto:oathukor@ualberta.ca">oathukor@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Communications:</strong> Janani Radhakrishnan - <a href="mailto:jradhakr@ualberta.ca">jradhakr@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>AFNS Rep:</strong> Sonia Navvuru - <a href="mailto:navvuru@ualberta.ca">navvuru@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>ReNR Rep:</strong> Priscillar Wenyika - <a href="mailto:wenyika@ualberta.ca">wenyika@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>REES Rep:</strong> Aynaz Gerami - <a href="mailto:gerami@ualberta.ca">gerami@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>HECOL Rep:</strong> Rajitha Botheju - <a href="mailto:botheju@ualberta.ca">botheju@ualberta.ca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2023-2024 -->
+                            <div class="past-executive-card">
+                                <div class="past-executive-image">
+                                    <img src="2023-2024.jpg" alt="Past Executive 2023-2024">
+                                    <div class="past-executive-overlay">
+                                        <span class="past-executive-year">2023-2024</span>
+                                    </div>
+                                </div>
+                                <div class="past-executive-content">
+                                    <h3>2023-2024 Executive Team</h3>
+                                    <div class="past-executive-team">
+                                        <div class="executive-member">
+                                            <strong>President:</strong> Sarah Ejekwuipe - <a href="mailto:ejekwuip@ualberta.ca">ejekwuip@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Communications:</strong> Jo Ann Chew - <a href="mailto:joann.chew@ualberta.ca">joann.chew@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Finance:</strong> Chathuranga De Silva - <a href="mailto:batapola@ualberta.ca">batapola@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Student Life:</strong> Sarah Aminah Namiiro - <a href="mailto:namiiro@ualberta.ca">namiiro@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>AFNS Rep:</strong> Etseoghena Obi - <a href="mailto:etseoghe@ualberta.ca">etseoghe@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>HECOL Rep:</strong> Elsie Rebecca Osei - <a href="mailto:erosei@ualberta.ca">erosei@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>ReNR Rep:</strong> Surabhi Lukose - <a href="mailto:slukose@ualberta.ca">slukose@ualberta.ca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2022-2023 -->
+                            <div class="past-executive-card">
+                                <div class="past-executive-image">
+                                    <img src="2022-2023.jpg" alt="Past Executive 2022-2023">
+                                    <div class="past-executive-overlay">
+                                        <span class="past-executive-year">2022-2023</span>
+                                    </div>
+                                </div>
+                                <div class="past-executive-content">
+                                    <h3>2022-2023 Executive Team</h3>
+                                    <div class="past-executive-team">
+                                        <div class="executive-member">
+                                            <strong>President:</strong> Bingxin Hai - <a href="mailto:bingxin@ualberta.ca">bingxin@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Student Life:</strong> Dagem Zekaryas Haddis - <a href="mailto:haddis@ualberta.ca">haddis@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Communications:</strong> Jo Ann Chew - <a href="mailto:joann.chew@ualberta.ca">joann.chew@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Finance:</strong> Stanley Woo - <a href="mailto:skwoo@ualberta.ca">skwoo@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>AFNS Rep:</strong> Nanzhen Qiao - <a href="mailto:nanzhen@ualberta.ca">nanzhen@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>ReNR Rep:</strong> Kiah Leicht - <a href="mailto:kmleicht@ualberta.ca">kmleicht@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>REES Rep:</strong> Innocent Bahati - <a href="mailto:ibahati@ualberta.ca">ibahati@ualberta.ca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2021-2022 -->
+                            <div class="past-executive-card">
+                                <div class="past-executive-image">
+                                    <img src="2021-2022.jpg" alt="Past Executive 2021-2022">
+                                    <div class="past-executive-overlay">
+                                        <span class="past-executive-year">2021-2022</span>
+                                    </div>
+                                </div>
+                                <div class="past-executive-content">
+                                    <h3>2021-2022 Executive Team</h3>
+                                    <div class="past-executive-team">
+                                        <div class="executive-member">
+                                            <strong>President:</strong> Harleen Kaur Dhaliwal - <a href="mailto:hd5@ualberta.ca">hd5@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Student Life:</strong> Abdelhamid S. Himat (Hamid) - <a href="mailto:abdelham@ualberta.ca">abdelham@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Communication:</strong> Srujana Mekala - <a href="mailto:mekala@ualberta.ca">mekala@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Finance:</strong> Dilrukshi Kombala Liyanage - <a href="mailto:kombalal@ualberta.ca">kombalal@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>HECOL Rep:</strong> Laura Munevar Ortiz - <a href="mailto:munevaro@ualberta.ca">munevaro@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>AFNS Rep:</strong> Dilrukshi Kombala Liyanage - <a href="mailto:kombalal@ualberta.ca">kombalal@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>REES Rep:</strong> Hotaka Kobori - <a href="mailto:kobori@ualberta.ca">kobori@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>ReNR Rep:</strong> Beckett Stark - <a href="mailto:bstark@ualberta.ca">bstark@ualberta.ca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2020-2021 -->
+                            <div class="past-executive-card">
+                                <div class="past-executive-image">
+                                    <img src="2020-2021.jpg" alt="Past Executive 2020-2021">
+                                    <div class="past-executive-overlay">
+                                        <span class="past-executive-year">2020-2021</span>
+                                    </div>
+                                </div>
+                                <div class="past-executive-content">
+                                    <h3>2020-2021 Executive Team</h3>
+                                    <p class="pandemic-note"><em>Note: 2020 and a pandemic. An in-person group photo wasn't recommended.</em></p>
+                                    <div class="past-executive-team">
+                                        <div class="executive-member">
+                                            <strong>President:</strong> Harleen Kaur Dhaliwal - <a href="mailto:hd5@ualberta.ca">hd5@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Student Life:</strong> Amritha Jaya Prasad - <a href="mailto:amritha@ualberta.ca">amritha@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Communication:</strong> Klevis Haxhiaj - <a href="mailto:haxhiaj@ualberta.ca">haxhiaj@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Finance:</strong> Iswarya Rajesh - <a href="mailto:iswarya@ualberta.ca">iswarya@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>HECOL Rep:</strong> Md. Saiful Hoque - <a href="mailto:hoque1@ualberta.ca">hoque1@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>AFNS Rep:</strong> Dilini Adihetty - <a href="mailto:adihetty@ualberta.ca">adihetty@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>REES Rep:</strong> Jerico Fiestas Flores - <a href="mailto:fiestasf@ualberta.ca">fiestasf@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>ReNR Rep:</strong> Justine Lejoly - <a href="mailto:lejoly@ualberta.ca">lejoly@ualberta.ca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2019-2020 -->
+                            <div class="past-executive-card">
+                                <div class="past-executive-image">
+                                    <img src="2019-2020.jpg" alt="Past Executive 2019-2020">
+                                    <div class="past-executive-overlay">
+                                        <span class="past-executive-year">2019-2020</span>
+                                    </div>
+                                </div>
+                                <div class="past-executive-content">
+                                    <h3>2019-2020 Executive Team</h3>
+                                    <div class="past-executive-team">
+                                        <div class="executive-member">
+                                            <strong>President:</strong> Lauren Degenstein - <a href="mailto:degenste@ualberta.ca">degenste@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Student Life:</strong> Brasathe Jeganathan - <a href="mailto:jeganath@ualberta.ca">jeganath@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Communication:</strong> Derek Mueller - <a href="mailto:derek4@ualberta.ca">derek4@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Finance:</strong> Harleen Kaur Dhaliwal - <a href="mailto:hd5@ualberta.ca">hd5@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>HECOL Rep:</strong> Jennifer Yurkiw - <a href="mailto:jyurkiw@ualberta.ca">jyurkiw@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>AFNS Rep:</strong> Srujana Mekala - <a href="mailto:mekala@ualberta.ca">mekala@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>REES Rep:</strong> Kira Dlusskaya - <a href="mailto:dlusskay@ualberta.ca">dlusskay@ualberta.ca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2018-2019 -->
+                            <div class="past-executive-card">
+                                <div class="past-executive-image">
+                                    <img src="2018-2019.jpg" alt="Past Executive 2018-2019">
+                                    <div class="past-executive-overlay">
+                                        <span class="past-executive-year">2018-2019</span>
+                                    </div>
+                                </div>
+                                <div class="past-executive-content">
+                                    <h3>2018-2019 Executive Team</h3>
+                                    <div class="past-executive-team">
+                                        <div class="executive-member">
+                                            <strong>President:</strong> Oanh Nguyen - <a href="mailto:oanh@ualberta.ca">oanh@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Communication:</strong> Yuan Fang - <a href="mailto:fang7@ualberta.ca">fang7@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Finance:</strong> Robyn Stobbs - <a href="mailto:stobbs@ualberta.ca">stobbs@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Student Life:</strong> Chandre Van De Merwe - <a href="mailto:vandemer@ualberta.ca">vandemer@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>AFNS Rep:</strong> Zhiying Wang - <a href="mailto:zhiying2@ualberta.ca">zhiying2@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>ReNR Rep:</strong> Autumn Watkinson - <a href="mailto:autumnly@ualberta.ca">autumnly@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>HECOL Rep:</strong> Andrew Magnaye - <a href="mailto:amagnaye@ualberta.ca">amagnaye@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>REES Rep:</strong> Yicong Luo - <a href="mailto:yicong5@ualberta.ca">yicong5@ualberta.ca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2017-2018 -->
+                            <div class="past-executive-card">
+                                <div class="past-executive-image">
+                                    <img src="2017-2018.jpg" alt="Past Executive 2017-2018">
+                                    <div class="past-executive-overlay">
+                                        <span class="past-executive-year">2017-2018</span>
+                                    </div>
+                                </div>
+                                <div class="past-executive-content">
+                                    <h3>2017-2018 Executive Team</h3>
+                                    <div class="past-executive-team">
+                                        <div class="executive-member">
+                                            <strong>President:</strong> Darcy Bemister - <a href="mailto:bemister@ualberta.ca">bemister@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Communication:</strong> Danielle Schultze - <a href="mailto:dms@ualberta.ca">dms@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Finance:</strong> Robyn Stobbs - <a href="mailto:stobbs@ualberta.ca">stobbs@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Student Life:</strong> Oanh Nguyen - <a href="mailto:oanh@ualberta.ca">oanh@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>AFNS Rep:</strong> Zhiying Wang - <a href="mailto:zhiying2@ualberta.ca">zhiying2@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>ReNR Rep:</strong> Stephanie Ibsen - <a href="mailto:sibsen@ualberta.ca">sibsen@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>HECOL Rep:</strong> Mariko Wakefield - <a href="mailto:mariko@ualberta.ca">mariko@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>REES Rep:</strong> Yangzhe Cao - <a href="mailto:yangzhe@ualberta.ca">yangzhe@ualberta.ca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2016-2017 -->
+                            <div class="past-executive-card">
+                                <div class="past-executive-image">
+                                    <img src="2016-2017.jpg" alt="Past Executive 2016-2017">
+                                    <div class="past-executive-overlay">
+                                        <span class="past-executive-year">2016-2017</span>
+                                    </div>
+                                </div>
+                                <div class="past-executive-content">
+                                    <h3>2016-2017 Executive Team</h3>
+                                    <div class="past-executive-team">
+                                        <div class="executive-member">
+                                            <strong>President:</strong> Pooran Appadu - <a href="mailto:pooran@ualberta.ca">pooran@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Communication:</strong> Danielle Schultze - <a href="mailto:dms@ualberta.ca">dms@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Finance:</strong> Stephanie Le - <a href="mailto:sle@ualberta.ca">sle@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Student Life:</strong> Mary Glasper - <a href="mailto:mglasper@ualberta.ca">mglasper@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>AFNS Rep:</strong> Darcy Bemister - <a href="mailto:bemister@ualberta.ca">bemister@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>ReNR Rep:</strong> Paul Sewell - <a href="mailto:sewell@ualberta.ca">sewell@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>HECOL Rep:</strong> Robyn Stobbs - <a href="mailto:stobbs@ualberta.ca">stobbs@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>REES Rep:</strong> Jolien Witte - <a href="mailto:jwitte@ualberta.ca">jwitte@ualberta.ca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2015-2016 -->
+                            <div class="past-executive-card">
+                                <div class="past-executive-image">
+                                    <img src="2015-2016.jpg" alt="Past Executive 2015-2016">
+                                    <div class="past-executive-overlay">
+                                        <span class="past-executive-year">2015-2016</span>
+                                    </div>
+                                </div>
+                                <div class="past-executive-content">
+                                    <h3>2015-2016 Executive Team</h3>
+                                    <div class="past-executive-team">
+                                        <div class="executive-member">
+                                            <strong>President:</strong> Muhammad Zubair - <a href="mailto:mzubair1@ualberta.ca">mzubair1@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Finance:</strong> Shanika Donalds - <a href="mailto:shanika@ualberta.ca">shanika@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>VP Student Life:</strong> Valerie Miller - <a href="mailto:vsmiller@ualberta.ca">vsmiller@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>Secretary:</strong> Alison Murata - <a href="mailto:amurata@ualberta.ca">amurata@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>AFNS Rep:</strong> Sasha van der Klein - <a href="mailto:sv1@ualberta.ca">sv1@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>HECOL Rep:</strong> Mary Glasper - <a href="mailto:mglasper@ualberta.ca">mglasper@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>ReNR Rep:</strong> Carolyn Gibson - <a href="mailto:cgibson3@ualberta.ca">cgibson3@ualberta.ca</a>
+                                        </div>
+                                        <div class="executive-member">
+                                            <strong>REES Rep:</strong> Lucas Novak - <a href="mailto:llnovak@ualberta.ca">llnovak@ualberta.ca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
             <div class="get-involved">
                 <div class="get-involved-content">
                     <div class="get-involved-text">
                         <h3>Get Involved</h3>
-                        <p>Interested in joining our executive team? We're always looking for passionate 
-                        graduate students to help lead initiatives and represent our community.</p>
+                        <p>Interested in joining our team? We're always looking for passionate graduate students to help lead initiatives and represent our community.</p>
                         <ul>
                             <li><i class="fas fa-circle"></i>Leadership opportunities available</li>
                             <li><i class="fas fa-circle"></i>Build your professional network</li>
@@ -192,7 +645,7 @@
                     </div>
                     <div class="get-involved-action">
                         <i class="fas fa-user"></i>
-                        <a href="contact.html" class="btn btn-secondary">Apply for Executive Position</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6M7VfcHrdZE6cZdGgWpxlmhVX1p0Tj-khEWRVhy_5zkTsXA/viewform?usp=sharing&ouid=107918076485634675758" target="_blank" class="btn btn-secondary">Apply for Volunteering Position</a>
                     </div>
                 </div>
             </div>
@@ -205,8 +658,8 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
-                        <div class="logo-icon">
-                            <i class="fas fa-graduation-cap"></i>
+                        <div class="logo-icon" style="width:40px;height:40px;padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+                            <img src="ALES logo.png" alt="ALES GSA Logo" style="width:100%;height:100%;object-fit:contain;display:block;">
                         </div>
                         <div class="logo-text">
                             <h3>ALES GSA</h3>
@@ -216,10 +669,8 @@
                     <p>Supporting graduate students in Agricultural, Life & Environmental Sciences 
                     through advocacy, community building, and professional development.</p>
                     <div class="social-links">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:alesgsa@ualberta.ca" title="Email Us"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/ales_gsa/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 
@@ -251,14 +702,14 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <p>Email</p>
-                            <span>info@alesgsa.ualberta.ca</span>
+                            <span>alesgsa@ualberta.ca</span>
                         </div>
                     </div>
                     <div class="footer-contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <p>Phone</p>
-                            <span>(780) 492-3111</span>
+                            <p>Room</p>
+                            <span>GSB 808</span>
                         </div>
                     </div>
                 </div>
